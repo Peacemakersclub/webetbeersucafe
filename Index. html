@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Webet Beersu Café & Restaurant | Authentic Ethiopian Cuisine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fef7e0;
+      color: #2c1a0e;
+      line-height: 1.5;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1600');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .contact-info {
+      background: #d32f2f;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 40px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 2rem;
+      border-left: 8px solid #d32f2f;
+      padding-left: 1rem;
+      margin: 2rem 0 1.5rem 0;
+      color: #3e2723;
+    }
+
+    /* Menu grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      transition: transform 0.2s;
+      border: 1px solid #f0dbc0;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.01);
+      background: #fffaf2;
+    }
+
+    .item-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #4e2e1a;
+    }
+
+    .item-price {
+      font-weight: 800;
+      color: #b34e1a;
+      background: #fef0e0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+    }
+
+    .subnote {
+      font-size: 0.75rem;
+      color: #7b5a3b;
+      margin-top: 0.2rem;
+    }
+
+    /* Services & payment */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      margin: 3rem 0;
+    }
+
+    .service-card {
+      background: #fff2e0;
+      border-radius: 24px;
+      padding: 1.5rem;
+      flex: 1;
+      min-width: 180px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    }
+
+    .payment-section {
+      background: #3e2723;
+      color: white;
+      border-radius: 32px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .payment-methods {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .payment-btn {
+      background: #ffb74d;
+      color: #2c1a0e;
+      padding: 0.8rem 1.8rem;
+      border-radius: 60px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      background: #2c1a0e;
+      color: #e0c8a0;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🍽️ Webet Beersu <br> Café & Restaurant</h1>
+  <p>Authentic Ethiopian flavors • Fresh ingredients • Traditional & international dishes</p>
+  <div class="contact-info">📞 Call / Telebirr: +251 928718820</div>
+</div>
+
+<div class="container">
+  <!-- ========== MAIN DISHES (MEAT) ========= -->
+  <div class="section-title">🍛 Main Dishes (Siga & Specials)</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Dulet</span><span class="item-price">370 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Yebeg Tibs (Lamb)</span><span class="item-price">600 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Yebeg Kikil</span><span class="item-price">420 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Gomen Besiga</span><span class="item-price">350 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Quanta Firfir</span><span class="item-price">400 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Siga Firfir</span><span class="item-price">350 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tibs Firfir</span><span class="item-price">350 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Kitfo Firfir</span><span class="item-price">350 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bozena Betibs</span><span class="item-price">420 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Combo Yefisik</span><span class="item-price">850 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bozena Beshero</span><span class="item-price">250 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Pasta Besiga</span><span class="item-price">270 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Rice Besiga</span><span class="item-price">280 ETB</span></div>
+  </div>
+
+  <!-- ========== VEGETARIAN & FASTING ========= -->
+  <div class="section-title">🌿 Vegetarian / Fasting Menu</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Tegabino</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Yetome Firfir</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Beyayentu</span><span class="item-price">300 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Shero Betimatim</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Suf Fitfit</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Telba Fitfit</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Pasta Beatikilet</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Rice Beatikilet</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tegabino Besuf</span><span class="item-price">230 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tegabino Be Pasta</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tegabino Befirfir</span><span class="item-price">220 ETB</span></div>
+  </div>
+
+  <!-- ========== BREAKFAST / SPECIALS ========= -->
+  <div class="section-title">☀️ Breakfast & Specials</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Kinche Yetom</span><span class="item-price">180 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Kinche Bekibe</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Nashif Normal</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Nashif Special</span><span class="item-price">250 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bula Bekibe</span><span class="item-price">250 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bula Kitfo</span><span class="item-price">300 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bula Yetom</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Pasta with egg</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Egg with meat</span><span class="item-price">270 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Normal Ful</span><span class="item-price">190 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Special Ful</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tomato slice</span><span class="item-price">160 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Egg slice</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Egg Firfir</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Yetom Chechebsa</span><span class="item-price">180 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Yefisik Chechebsa</span><span class="item-price">200 ETB</span></div>
+  </div>
+
+  <!-- ========== BURGERS & SANDWICHES ========= -->
+  <div class="section-title">🍔 Burgers & Sandwiches</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Normal Burger</span><span class="item-price">420 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Cheese Burger</span><span class="item-price">470 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Wubet Special Burger</span><span class="item-price">500 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Club Sandwich</span><span class="item-price">470 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Egg Sandwich Normal</span><span class="item-price">220 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Chips</span><span class="item-price">160 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Special Sandwich</span><span class="item-price">250 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Double Burger</span><span class="item-price">700 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tuna Sandwich</span><span class="item-price">300 ETB</span></div>
+  </div>
+
+  <!-- ========== PIZZAS ========= -->
+  <div class="section-title">🍕 Pizzas (Large size)</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Special Large Pizza</span><span class="item-price">850 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Beef Large Pizza</span><span class="item-price">670 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Chicken Large Pizza</span><span class="item-price">700 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Margarita Pizza</span><span class="item-price">650 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tuna Pizza</span><span class="item-price">600 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Veg Pizza</span><span class="item-price">600 ETB</span></div>
+  </div>
+
+  <!-- ========== FETIRA (Honey/Egg) ========= -->
+  <div class="section-title">🥞 Fetira (Traditional)</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Fetira full with egg</span><span class="item-price">360 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Fetira full with honey</span><span class="item-price">360 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Fetira full honey & egg</span><span class="item-price">400 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Fetira half with honey</span><span class="item-price">300 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Fetira half with egg</span><span class="item-price">300 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Fetira half honey & egg</span><span class="item-price">340 ETB</span></div>
+  </div>
+
+  <!-- ========== CAKES & PASTRIES ========= -->
+  <div class="section-title">🍰 Cakes & Pastries</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Tekorach</span><span class="item-price">100 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Black Forest</span><span class="item-price">130 ETB</span></div>
+    <div class="menu-item"><span class="item-name">White Forest</span><span class="item-price">130 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bokesegna</span><span class="item-price">130 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Milifoni</span><span class="item-price">130 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Torta 1 kilo</span><span class="item-price">1100 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Torta 2 kilo</span><span class="item-price">2200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Sanbusa</span><span class="item-price">50 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Bonbolino</span><span class="item-price">70 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Anbesha</span><span class="item-price">50 ETB</span></div>
+  </div>
+
+  <!-- ========== JUICES & BEVERAGES ========= -->
+  <div class="section-title">🥤 Juices, Shakes & Salads</div>
+  <div class="menu-grid">
+    <div class="menu-item"><span class="item-name">Mango</span><span class="item-price">150 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Avocado</span><span class="item-price">150 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Papaya</span><span class="item-price">150 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Espresso</span><span class="item-price">180 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Pineapple</span><span class="item-price">180 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Special Juice (milk, vanilla, chocolate)</span><span class="item-price">250 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Avocado milk</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Banana shake</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Papaya shake</span><span class="item-price">200 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Normal salad</span><span class="item-price">260 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Tuna salad</span><span class="item-price">300 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Egg</span><span class="item-price">25 ETB</span></div>
+    <div class="menu-item"><span class="item-name">Mayonnaise</span><span class="item-price">30 ETB</span></div>
+  </div>
+
+  <!-- SERVICES & PAYMENT SECTION (like reference) -->
+  <div class="services">
+    <div class="service-card">🚚 <strong>Fast Delivery</strong><br>Free delivery within 5km<br>⏱️ 30-45 min</div>
+    <div class="service-card">🏪 <strong>Easy Pickup</strong><br>Order online & pick up</div>
+    <div class="service-card">🍽️ <strong>Table Reservation</strong><br>Cozy seating & garden</div>
+    <div class="service-card">☕ <strong>Traditional Coffee</strong><br>Backyard space available</div>
+  </div>
+
+  <div class="payment-section">
+    <h3>💳 Select Payment Method</h3>
+    <div class="payment-methods">
+      <a href="tel:+251928718820" class="payment-btn">📱 Telebirr: +251928718820</a>
+      <a href="#" class="payment-btn">🏦 Dimo Payment (Bank)</a>
+      <a href="#" class="payment-btn">💵 Cash on Delivery</a>
+    </div>
+    <p style="margin-top: 1rem;">✔️ Bank Transfer: Commercial Bank of Ethiopia / Dimo<br>Account: Webet Beersu Trading | Ask our staff for account number</p>
+    <p style="margin-top: 0.8rem;">📞 Order via Phone / Telebirr: <strong>+251 928718820</strong></p>
+  </div>
+</div>
+
+<footer>
+  © 2026 Webet Beersu Café & Restaurant – Authentic Ethiopian Taste<br>
+  Location: Addis Ababa (near Bole) | Open daily 8:00 AM – 10:00 PM<br>
+  *Prices inclusive of VAT | Freshly prepared
+</footer>
+</body>
+</html>
